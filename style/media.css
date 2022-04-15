@@ -1,0 +1,210 @@
+@media (max-width: 1202px){
+    .nav{
+        display: none;
+    }
+    .burger_open{
+        display: block;
+    }
+    .news .cards{
+        flex-direction: column;
+    }
+    .news .card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 150px;
+    }
+    .news .card:nth-child(3n){
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 1025px){
+    .advantages .list{
+        text-align: center;
+    }
+    
+    .advantages .item{
+        width: 50%;
+    }
+    .news .card{
+        width: 35%;
+    }
+    .news .card h4{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 900px){
+    .screensaver img,
+    .screensaver iframe{
+        width: 80%;
+    }
+    .services .wrapper,
+    .reviews .social-networks{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services .half{
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    .reviews .social-networks .item{
+        margin-bottom: 50px;
+    }
+    .footer .wrapper{
+        flex-direction: column-reverse;
+    }
+        .footer .social-neworks{
+        width: 30%;
+        margin-bottom: 25px;
+    }
+    
+}
+@media (max-width: 800px){
+    .advantages h2,
+    .insurance h2,
+    .manufacturer h3{
+        text-align: center;
+        font-size: 28px;
+    }
+    .manufacturer h3{
+        margin-bottom: 20px;
+    }
+    .manufacturer .list{
+        flex-direction: column;
+    }
+    .manufacturer .item{
+        width: 70%;
+        height: 55px;
+        margin-bottom: 30px;
+    }
+    .slider{
+        width: 100%;
+    }
+    .news .card{
+        width: 40%;
+    }
+}
+@media (max-width: 700px){
+    .promo h2{
+        font-size: 42px;
+    }
+    .about  h3{
+        font-size: 26px;
+    }
+    .about h2{
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 600px){
+    .promo{
+        background-size: 100%;
+    }
+    .screensaver img,
+    .screensaver iframe{
+        width: 90%;
+        height: auto;
+    }
+    .screensaver{
+        margin-bottom: -150px;
+    }
+    .insurance ul{
+        flex-direction: column;
+    }
+    .insurance li{
+        margin-bottom: 30px;
+    }
+    .services .half{
+        width: 90%;
+    }
+    .news .card{
+        width: 60%;
+    }
+    .info{
+        padding-top: 60px;
+    }
+}
+@media (max-width: 460px){
+    .advantages .list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .advantages .item{
+        margin-bottom: 25px;
+    }
+    .advantages p{
+        margin: 0 auto;
+    }
+    .screensaver{
+        margin-bottom: -70px;
+
+    }
+    .screensaver iframe{
+        width: 360px;
+        height: 200px;
+    }
+    .services .half{
+        text-align: center;
+        width: 100%;
+        height: 340px;
+    }
+    .services p{
+        margin: 0 auto;
+    }
+    .slide h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .info ul{
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px){
+    .logo,
+    .logo img{ 
+        width: 66px;
+        height: 34px;
+    }
+    .nav.mobile{
+        padding-top: 25px;
+    }
+    .burger_open,
+    .burger_close{
+        font-size: 18px;
+    }
+    .promo h2{
+        font-size: 24px;
+    }
+    .about h2{
+        font-size: 14px;
+    }
+    .screensaver{
+        margin-top: 20px;
+    }
+    .screensaver iframe{
+        width: 300px;
+        height: 160px;
+    }
+    .advantages h2{
+        margin-top: 40px;
+    }
+    .advantages .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .advantages span{
+        order: 1;
+        margin-bottom: 5px;
+    }
+    .advantages p{
+        order: 2;
+        margin-bottom: 10px;
+    }
+    .advantages img{
+        position: static;
+        order: 3;
+    }
+}
