@@ -20,6 +20,7 @@
     right: 20px;
     font-size: 42px;
     color: red;
+    cursor: pointer;
 }
 .calc{
     display: grid;
@@ -38,11 +39,20 @@
     grid-column: 1 / -1;
     background-color: #fff;
     border-radius: 10px;
+    cursor: pointer;
+}
+.number{
+    opacity: 0.9;
 }
 .calc .btn{
     border: 1px solid #20222B;
     border-radius: 10px;
     font-size: 18px;
+    cursor: pointer;
+    transition: 1s linear;
+}
+.calc .btn:hover{
+    background-color: #006DF0;
 }
 .calc .count{
     grid-column: 1 / -1;

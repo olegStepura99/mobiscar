@@ -1,3 +1,5 @@
+"use strict";
+
 const calculate = function() {
     const popup = document.querySelector(".popup");
     const btnOpen = document.querySelector(".promo button");
