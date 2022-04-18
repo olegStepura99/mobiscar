@@ -5,215 +5,250 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobiscar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/calc.css">
     <link rel="stylesheet" href="style/media.css">
     <script defer src="./script/script.js"></script>
+    <script defer src="./script/calc.js"></script>
 </head>
 <body>
-    <div class="site">
-        <header class="header">
-            <div class="wrapper">
-                <div class="logo">
-                    <a href="/"><img src="./image/logo.svg" alt="logo svg"></a>
-                </div>
-                <nav class="nav">
-                    <button class="burger_close">Закрыть</button>
-                    <a href="#">Автостекла</a>
-                    <a href="#">Услуги</a>
-                    <a href="#">Продукция</a>
-                    <a href="#">Опт</a>
-                    <a href="#">О компании</a>
-                    <a href="#">Контакты</a>   
+    <header>
+        <div class="wrapper">
+            <a href="/" class="logo"><img src="./image/logo.svg" alt="logo svg"></a>
+            <nav>
+                <button class="burger-close">Закрыть</button>
+                <a href="#">Автостекла</a>
+                <a href="#">Услуги</a>
+                <a href="#">Продукция</a>
+                <a href="#">Опт</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <div class="buttons">
                     <button>Записаться на замену</button>
-                    <button class="btn_call">Заказать звонок</button>                 
-                </nav>
-                <button class="burger_open">Меню</button>        
-            </div>
-        </header>
+                    <button class="btn-call">Заказать звонок</button>      
+                </div>   
+            </nav>
+            <button class="burger-open">Меню</button>
+        </div>        
+    </header>
 
-        <section class="promo">
-            <h2>РЕМОНТ И УСТАНОВКА <br/> АВТОСТЁКОЛ</h2>
-            <button>Узнать больше</button>
-        </section>
+    <section class="promo">
+        <h2>РЕМОНТ И УСТАНОВКА АВТОСТЁКОЛ</h2>
+        <button>Узнать больше</button>
+    </section>
 
-        <section class="about">
-            <div class="wrapper">
-                <h3>MobisCar – по настоящему профессионально!</h3>
-                <h2>Узнать о нас больше <img src="./image/clock_icon.svg" alt="icon clock"> за 4 минуты</h2>
-                <div class="screensaver">
-                    <img src="./image/screensaver.svg" alt="screen video">
-                    <button class="screensaver_btn">&#128898;</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="advantages">
-            <div class="wrapper">
-                <h2>Наши преимущества</h2>
-                <div class="list">
-                    <div class="item">
-                        <img src="./image/advanteges_item1.svg" alt="clock">
-                        <span>1</span>
-                        <p>Оперативная замена</p>
-                    </div>
-                    <div class="item">
-                        <img src="./image/advanteges_item2.svg" alt="admin">
-                        <span>2</span>
-                        <p>Квалифицированный персонал</p>
-                    </div>
-                    <div class="item">
-                        <img src="./image/advanteges_item3.svg" alt="search">
-                        <span>3</span>
-                        <p>Большой выбор автостекла</p>
-                    </div>
-                    <div class="item">
-                        <img src="./image/advanteges_item4.svg" alt="armchair">
-                        <span>4</span>
-                        <p>Комфортный сервис</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="insurance">
-            <div class="wrapper">
-                <h2>Страховой случай</h2>
-                <ul>
-                    <li><img src="./image/insurence_item1.svg" alt="Страховое общество Кетнавр"></li>
-                    <li><img src="./image/insurence_item2.svg" alt="Белгосстрах"></li>
-                    <li><img src="./image/insurence_item3.svg" alt="Белросстрах"></li>
-                    <li><img src="./image/insurence_item4.svg" alt="Ergo"></li>
-                    <li><img src="./image/insurence_item5.svg" alt="Белингострах"></li>
-                    <li><img src="./image/insurence_item6.svg" alt="Белнефтестрах"></li>
-                    <li><img src="./image/insurence_item7.svg" alt="Багач"></li>
-                    <li><img src="./image/insurence_item8.svg" alt="Страховая компания Промтинвест"></li>
-                    <li><img src="./image/insurence_item9.svg" alt="Купала"></li>
-                    <li><img src="./image/insurence_item10.svg" alt="B&B"></li>
-                    <li><img src="./image/insurence_item11.svg" alt="Белвнешстрах"></li>
-                    <li><img src="./image/insurence_item12.svg" alt="Белкоопстрах"></li>
-                    <li><img src="./image/insurence_item13.svg" alt="Таск"></li>
-                </ul>
-            </div>
-        </section>
-        <section class="services">
-            <div class="wrapper">
-                <div class="half left">
-                    <h3>Замена</h3>
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                </div>
-                <div class="half right">
-                    <h3>Ремонт</h3>
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="manufacturer">
-            <div class="wrapper">
-                <h3>Автостекла по производителям</h3>
-                <ul class="list">
-                    <li class="item">Pilkington</li>
-                    <li class="item">Sekurit</li>
-                    <li class="item">Fuyao Glass<br/>(FYG)</li>
-                    <li class="item">Xinyi Glass Co. (XYG)</li>
-                    <li class="item">AGC</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="reviews">
-            <div class="wrapper">
-
-                <div class="slider">
-                    <button class="arr prev">&#10094;</button>
-                    <div class="slider_wrapper">
-                      <div class="list">
-                            <div class="slide">
-                                <h4>ИВАН, ООО СТРОЙМЕТ</h4>
-                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
-                            </div>
-                            <div class="slide">
-                                <h4>ИВАН, ООО СТРОЙМЕТ2</h4>
-                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
-                            </div>
-                            <div class="slide">
-                                <h4>ИВАН, ООО СТРОЙМЕТ3</h4>
-                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="arr next">&#10095;</button>
-                </div>
-                <h3>Отзывы на других ресурсах</h3>
-
-                <div class="social-networks">
-                    <div class="item">
-                        <img src="./image/vk_logo.svg" alt="vk icon">
-                        <span>Вконтакте</span>
-                    </div>
-                    <div class="item">
-                        <img src="./image/vk_logo.svg" alt="vk icon">
-                        <span>Вконтакте</span>
-                    </div>
-                    <div class="item">
-                        <img src="./image/vk_logo.svg" alt="vk icon">
-                        <span>Вконтакте</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="news">
-            <div class="wrapper">
-                <div class="cards">
-                    <div class="card left">
-                        <span>10.08.18</span>
-                        <h4>Сколько стоит замена лобового стекла?</h4>
-                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                    </div>
-                    <div class="card center">
-                        <span>10.08.18</span>
-                        <h4>Сколько стоит замена лобового стекла?</h4>
-                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                    </div>
-                    <div class="card right">
-                        <span>10.08.18</span>
-                        <h4>Сколько стоит замена лобового стекла?</h4>
-                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                    </div>
-                </div>
-
-                <a href="#">Больше новостей</a>
-            </div>
-        </section>
-
-        <div class="info">
-            <div class="wrapper">
-                    <p>Компания «Мобискар» предлагает купить стекло для авто с заменой в Минске по наиболее доступным ценам! Мы предлагаем все виды стекол: закаленные и триплекс. У нас вы найдете любые автостекла:</p>
-                    <ul>
-                        <li>Лобовые</li>
-                        <li>Задание</li>
-                        <li>Боковые опускные и кузовные</li>
-                    </ul>
-                    <p>Мы сотрудничаем с самыми известными и надежными производителями автостекол: Pilkington, Sekurit, Fuyao Glass (FYG), Xinyi Glass Co. (XYG), AGC. Наши специалисты имеют большой опыт работы в данной сфере, полностью соблюдают все необходимые технологические требования и используют исключительно качественные материалы для автомобилей, именно поэтому, обращаясь к нам, вы можете быть уверены в отличном результате!</p>
+    <section class="about">
+        <div class="wrapper">
+            <h3>MobisCar – по настоящему профессионально!</h3>
+            <h2>Узнайте о нас больше <img src="./image/clock_icon.svg" alt="icon clock"> за 4 минуты</h2>
+            <div class="screensaver">
+                <img src="./image/screensaver.png" alt="screen video">
+                <button class="screensaver-btn">&#128898;</button>
             </div>
         </div>
+    </section>
 
-        <footer class="footer">
-            <div class="wrapper">
-                <div class="contacts">
-                    <p>ООО «ФИРМА»   УНП 193278938   ОКПО 381483825000</p>
-                    <p>Адрес: 220004  г. Минск, Рокоссовского, 312 телефон/факс: 226-33-73, +375 29 126 33 73,  +375 29 774 33 73</p>
-                    <p>ОАО «Франсабанк», БИК – GTBNBY22    р/с BY57GTBN30128000000325394201    Адрес банка: г. Минск, пр. Независимости, 95 А</p>
+    <section class="advantages">
+        <div class="wrapper">
+            <h2>Наши преимущества</h2>
+            <div class="list">
+                <div class="item">
+                    <img src="./image/advanteges_item1.svg" alt="clock">
+                    <span>1</span>
+                    <p>Оперативная замена</p>
                 </div>
-                <div class="social-neworks">
-                    <a href="https://vk.com" target="_blank"><img src="./image/vk_icon.svg" alt="vkontakte icon"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="./image/insta_icon.svg" alt="instagram icon"></a>
-                    <a href="https://ok.ru/" target="_blank"><img src="./image/ok_icon.svg  " alt="ok icon"></a>
+                <div class="item">
+                    <img src="./image/advanteges_item2.svg" alt="admin">
+                    <span>2</span>
+                    <p>Квалифицированный персонал</p>
+                </div>
+                <div class="item">
+                    <img src="./image/advanteges_item3.svg" alt="search">
+                    <span>3</span>
+                    <p>Большой выбор автостекла</p>
+                </div>
+                <div class="item">
+                    <img src="./image/advanteges_item4.svg" alt="armchair">
+                    <span>4</span>
+                    <p>Комфортный сервис</p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <section class="insurance wrapper">
+        <h2>Страховой случай</h2>
+        <ul>
+            <li><img src="./image/insurence_item1.svg" alt="Страховое общество Кетнавр"></li>
+            <li><img src="./image/insurence_item2.svg" alt="Белгосстрах"></li>
+            <li><img src="./image/insurence_item3.svg" alt="Белросстрах"></li>
+            <li><img src="./image/insurence_item4.svg" alt="Ergo"></li>
+            <li><img src="./image/insurence_item5.svg" alt="Белингострах"></li>
+            <li><img src="./image/insurence_item6.svg" alt="Белнефтестрах"></li>
+            <li><img src="./image/insurence_item7.svg" alt="Багач"></li>
+            <li><img src="./image/insurence_item8.svg" alt="Страховая компания Промтинвест"></li>
+            <li><img src="./image/insurence_item9.svg" alt="Купала"></li>
+            <li><img src="./image/insurence_item10.svg" alt="B&B"></li>
+            <li><img src="./image/insurence_item11.svg" alt="Белвнешстрах"></li>
+            <li><img src="./image/insurence_item12.svg" alt="Белкоопстрах"></li>
+            <li><img src="./image/insurence_item13.svg" alt="Таск"></li>
+        </ul>
+    </section>
+
+    <section class="services wrapper">
+        <a class="half left" href="#">
+            <h3>Замена</h3>
+            <div>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <span>&#72192;</span>
+            </div>
+        </a>
+        <a class="half right" href="#">
+            <h3>Ремонт</h3>
+            <div>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <span>&#72192;</span>
+            </div>
+        </a>
+    </section>
+
+    <section class="manufacturer wrapper">
+        <h3>Автостёкла по производителям</h3>
+        <ul class="list">
+            <li class="item"><a href="">Pilkington</a></li>
+            <li class="item"><a href=""> Sekurit</a></li>
+            <li class="item"><a href="">Fuyao Glass (FYG)</a></li>
+            <li class="item"><a href="">Xinyi Glass Co. (XYG)</a> </li>
+            <li class="item"><a href=""> AGC</a></li>
+        </ul>
+    </section>
+
+    <section class="reviews">
+        <div class="wrapper">
+            <div class="slider">
+                <button class="arr prev disabled">&#10094;</button>
+                <div class="slider-wrapper">
+                  <div class="list">
+                        <div class="slide">
+                            <h4>ИВАН, ООО СТРОЙМЕТ</h4>
+                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                        </div>
+                        <div class="slide">
+                            <h4>ИВАН, ООО СТРОЙМЕТ2</h4>
+                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                        </div>
+                        <div class="slide">
+                            <h4>ИВАН, ООО СТРОЙМЕТ3</h4>
+                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="arr next">&#10095;</button>
+            </div>
+            
+            <h3>Отзывы на других ресурсах</h3>
+
+            <div class="social-networks">
+                <div class="item">
+                    <a href="https://vk.com/" target="_blank"><img src="./image/vk_logo.svg" alt="vk icon"></a>
+                    <span>Вконтакте</span>
+                </div>
+                <div class="item">
+                    <a href="https://vk.com/" target="_blank"><img src="./image/vk_logo.svg" alt="vk icon"></a>
+                    <span>Вконтакте</span>
+                </div>
+                <div class="item">
+                    <a href="https://vk.com/" target="_blank"><img src="./image/vk_logo.svg" alt="vk icon"></a>
+                    <span>Вконтакте</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news wrapper">
+            <div class="cards">
+                <a href="#" class="card left">
+                    <span>10.08.18</span>
+                    <h4>Сколько стоит замена лобового стекла?</h4>
+                    <div> 
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                        <span>&#72192;</span>
+                    </div>
+                </a>
+                <a href="#" class="card center">
+                    <span>10.08.18</span>
+                    <h4>Сколько стоит замена лобового стекла?</h4>
+                    <div> 
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                        <span>&#72192;</span>
+                    </div>
+                </a>
+                <a href="#" class="card right">
+                    <span>10.08.18</span>
+                    <h4>Сколько стоит замена лобового стекла?</h4>
+                    <div> 
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                        <span>&#72192;</span>
+                    </div>
+                </a>
+            </div>
+            <a href="#" class="btn">Больше новостей</a>
+    </section>
+
+    <div class="info">
+        <div class="wrapper">
+                <p>Компания «Мобискар» предлагает купить стекло для авто с заменой в Минске по наиболее доступным ценам! Мы предлагаем все виды стекол: закаленные и триплекс. У нас вы найдете любые автостекла:</p>
+                <ul>
+                    <li>Лобовые</li>
+                    <li>Задание</li>
+                    <li>Боковые опускные и кузовные</li>
+                </ul>
+                <p>Мы сотрудничаем с самыми известными и надежными производителями автостекол: Pilkington, Sekurit, Fuyao Glass (FYG), Xinyi Glass Co. (XYG), AGC. Наши специалисты имеют большой опыт работы в данной сфере, полностью соблюдают все необходимые технологические требования и используют исключительно качественные материалы для автомобилей, именно поэтому, обращаясь к нам, вы можете быть уверены в отличном результате!</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="contacts">
+                <p>ООО «ФИРМА»   УНП 193278938   ОКПО 381483825000</p>
+                <p>Адрес: 220004  г. Минск, Рокоссовского, 312 телефон/факс: 226-33-73, +375 29 126 33 73,  +375 29 774 33 73</p>
+                <p>ОАО «Франсабанк», БИК – GTBNBY22    р/с BY57GTBN30128000000325394201    Адрес банка: г. Минск, пр. Независимости, 95 А</p>
+            </div>
+            <div class="social-neworks">
+                <a href="https://vk.com" target="_blank"><img src="./image/vk_icon.svg" alt="vkontakte icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./image/insta_icon.svg" alt="instagram icon"></a>
+                <a href="https://ok.ru/" target="_blank"><img src="./image/ok_icon.svg  " alt="ok icon"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup">
+        <button class="close">X</button>
+        <div class="calc">
+            <input class="result" type="text">
+
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn">+</button>
+
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn">-</button>
+
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+            <button class="btn">*</button>
+
+            <button class="btn number">0</button>
+            <button class="btn number">.</button>
+            <button class="btn">C</button>
+            <button class="btn">/</button>
+
+            <button class="btn count">=</button>
+        </div>
     </div>
 </body>
 </html>
