@@ -21,6 +21,10 @@
     font-size: 42px;
     color: red;
     cursor: pointer;
+    transition: all 0.5s linear;
+}
+.popup .close:hover{
+    opacity: 0.3;
 }
 .calc{
     display: grid;

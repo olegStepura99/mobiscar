@@ -30,17 +30,22 @@ body{
     font-family: "Proxima Nova", sans-serif;
     font-weight: 400;
 }
-
+button{
+    cursor: pointer;
+}
 .wrapper{
     width: 86%;
     max-width: 1320px;
     margin: 0 auto;
 }
+
 header{
-    padding-top: 27px;
+    padding-top: 28px;
+    padding-bottom: 40px;
     background-color: #20222B;
 }
-header .wrapper{
+
+header  .wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,6 +58,7 @@ header .wrapper{
 .logo:hover{
     opacity: 0.5 ;
 }
+
 nav{
     width: 79.4%;
     padding-bottom: 11px;
@@ -65,12 +71,12 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    transition: color 0.4s linear;
+    transition: color 0.5s ease-in-out;
 }
-
 nav a:hover{
     color: #006DF0;
 }
+
 nav button{
     font-size: 14px;
     color: #fff;
@@ -80,13 +86,13 @@ nav button{
     width: 17.5%;
     min-width: 165px;
     border-radius: 18px;
-    cursor: pointer;
-    transition: all 1s linear;
+    transition: all 0.7s linear;
 }
 nav button:hover{
     background: transparent;
     color: #006DF0;
 }
+
 .btn-call{
     margin-left: 6px;
     width: 14.5%;
@@ -146,10 +152,10 @@ nav.mobile a{
     text-transform: uppercase;
     font-size: 22px;
     color: #fff;
-    cursor: pointer;
 }
 .promo{
-    padding-top: 10.1%;
+    margin-top: -5px;
+    padding-top: 7.3%;
     padding-bottom: 11.4%; 
     height: 100%;
     text-align: center;
@@ -161,23 +167,21 @@ nav.mobile a{
 .promo h2{
     margin: 0 auto;
     width: 70%;
-    line-height: 74px;
-    margin-bottom: 50px;
+    line-height: 77px;
+    margin-bottom: 46px;
     font-size: 58px;
     font-weight: 600;
-    letter-spacing: 0px;
     color: #fff;
 }
 .promo button{
-    width: 235px;
-    line-height: 50px;
+    width: 232px;
+    line-height: 48px;
     font-size: 18px;
     text-transform: uppercase;
     color: #fff;
     background-color: #006DF0;
     border: 1px solid #006DF0;
     border-radius: 25px;
-    cursor: pointer;
     transition: all 1s linear;
 }
 .promo button:hover{
@@ -185,14 +189,14 @@ nav.mobile a{
     color: #006DF0;
 }
 .about{
-    padding-top: 75px;
+    padding-top: 70px;
     background-image: url("../image/about_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 }
 .about  h3{
-    margin-bottom: 47px;
+    margin-bottom: 51px;
     font-size: 32px;
     font-weight: 600;
     font-style: italic;
@@ -218,11 +222,11 @@ nav.mobile a{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding-left: 45px;
+    padding-left: 41px;
 }
 .about h2 img{
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 15px;
     width: 40px;
     height: 50px;
 }
@@ -251,7 +255,10 @@ nav.mobile a{
     position: absolute;
     top: calc(50% - 38px);
     left: calc(50% - 17px);
-    cursor: pointer;
+    transition: all 1s linear;
+}
+.screensaver-btn:hover{
+    opacity: 0.1;
 }
 .advantages{
     padding-top: 12.2%;
@@ -297,7 +304,7 @@ nav.mobile a{
     color: #fff;
 }
 .insurance{
-    padding: 7.4% 0;
+    padding: 7.5% 0;
 }
 .insurance h2{
     margin-left: 45px;
@@ -316,10 +323,11 @@ nav.mobile a{
     flex-wrap: wrap;
 }
 .insurance li{
-    margin: 15px 10px;
+    margin: 18px 9px;
 }
 .services{
-    padding: 2% 0;
+    padding-top: 1%;
+    padding-bottom: 2%;
 }
 .services.wrapper{
     display: flex;
@@ -381,7 +389,7 @@ nav.mobile a{
     position: relative;
     z-index: 3;
     display: block;
-    width: 80%;
+    width: 82%;
     font-size: 16px;
     line-height: 30px;
     color: #fff;
@@ -400,7 +408,7 @@ nav.mobile a{
 }
 
 .manufacturer{
-    padding-top: 9.66%;
+    padding-top: 9.72%;
     padding-bottom: 11.5%;
 }
 .manufacturer h3{
@@ -467,10 +475,12 @@ nav.mobile a{
     display: flex;
     justify-content: space-evenly;
     transition:  1.5s linear;
-    width: 2440px;
+    width: 300%;
+    /* width: 2440px; */
 }
 .slider .slide{
-    width: 720px;
+    /* width: 720px; */
+    width: 70%;
     text-align: center;
 }
 .slider .arr{
@@ -483,7 +493,6 @@ nav.mobile a{
     font-size: 26px;
     text-align: center;
     color: #707070;
-    cursor: pointer;
     transition: 0.4s linear;
 }
 .slider .arr:hover{
@@ -549,7 +558,7 @@ nav.mobile a{
 .news .cards{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
 }
 .news .card{
     color: #20222B;
@@ -649,17 +658,20 @@ nav.mobile a{
     opacity: 0.6;
 }
 .info{
-    padding-top: 2.7%;
-    padding-bottom: 8.5%;
+    padding-top: 2.3%;
+    padding-bottom: 6.2%;
     color:#20222B;
     margin-left: 42px;
 }
 .info p{
+    font-size: 16px;
+    line-height: 30px;
+    width: 98%;
     line-height: 30px;
 }
 .info ul{
     display: flex;
-    margin: 32px 18px;
+    margin: 33px 18px;
 }
 .info li{
     margin-right: 27px;

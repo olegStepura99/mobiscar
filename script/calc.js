@@ -18,7 +18,6 @@ const calculate = function() {
         const value = event.target.innerHTML
 
         if(value == "="){
-            console.log(result.value)
             result.value = eval(result.value);
         }else if(value == "C"){
             result.value  = "";

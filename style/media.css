@@ -1,9 +1,28 @@
+@media (min-width: 1500px){
+    .services .half{
+        height: 600px;
+    }
+    .news .card h4{
+        margin-bottom: 100px;
+    }
+}
+
 @media (max-width: 1202px){
     nav{
         display: none;
     }
     .burger-open{
         display: block;
+    }
+    .services .half{
+        height: 450px;
+    }
+        
+    .slider .list{
+        width: 290%;
+    }
+    .slider .slide{
+        width: 30%;
     }
     .news .cards{
         flex-direction: column;
@@ -12,47 +31,40 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 150px;
+        width: 380px;
+    }
+    .news .card:hover{
+        color: #fff;
+        transform: scale(1.02);
     }
     .news .card:nth-child(3n){
         margin-bottom: 0;
     }
-    .slider .list{
-        width: 2100px ;
-    }
-    .slider .slide{
-        width: 600px;
-    }
-    .news .card{
-        width: 35%;
-    }
     .news .card h4{
         margin-bottom: 100px;
     }
-}
-@media (max-width: 1025px){    
 
+}
+@media (max-width: 1025px){ 
     .screensaver img,
     .screensaver iframe{
         width: 61%;
-        height: 300px;
+        height: 290px;
     }
     .advantages .list{
-        display: flex;
-    }
-    .advantages .item{
-        width: 50%;
-    }
-    .slider .list{
-        width: 2340px ;
-    }
-    .slider .slide{
-        width: 500px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 }
 @media (max-width: 900px){
     .promo h2{
         width: 80%;
         font-size: 48px;
+    }
+    .screensaver,
+    .screensaver.video-show{
+        margin-left: 0;
+        padding-left: 0;
     }
     .screensaver img,
     .screensaver iframe{
@@ -64,43 +76,17 @@
         align-items: center;
     }
     .services .half{
-        width: 70%;
+        width: 450px;
         margin-bottom: 30px;
-    }   
-    .manufacturer .list{
-        justify-content: space-evenly;
-    }
-    .manufacturer .item{
-        width: 28%;
-        margin-top: 15px;
-    }
-    .reviews .social-networks .item{
-        margin-bottom: 50px;
-    }
-    .footer .wrapper{
-        flex-direction: column-reverse;
-    }
-    .footer .social-neworks{
-        width: 30%;
-        margin-bottom: 25px;
-    }
-    
-}
-@media (max-width: 800px){
-    .about h2{
-        font-size: 22px;
-    }
+        height: 500px;
+    }  
     .advantages h2,
     .insurance h2,
     .manufacturer h3{
+        margin-top: 40px;
+        margin-left: 0;
         text-align: center;
         font-size: 28px;
-    }
-    .advantages h2{
-        margin-top: 70px;
-    } 
-    .manufacturer h3{
-        margin-bottom: 20px;
     }
     .manufacturer .list{
         flex-direction: column;
@@ -110,49 +96,67 @@
         height: 55px;
         margin-bottom: 30px;
     }
+
+    .reviews .social-networks .item{
+        margin-bottom: 30px;
+    }
+    .footer .wrapper{
+        flex-direction: column-reverse;
+    }
+    .footer .social-neworks{
+        width: 30%;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 800px){
+    .promo{
+        background-size: 100%;
+    }
+    .about h3{
+        font-size: 25px;
+    }
+    .about h3::before,
+    .about h3::after{
+        max-width: 168px;
+    }
+    .about h2{
+        font-size: 22px;
+    }
+    .advantages h2{
+        margin-top: 70px;
+    } 
+    .manufacturer h3{
+        margin-bottom: 20px;
+    }
     .slider{
         width: 100%;
-    }
-    .news .card{
-        width: 50%;
     }
 }
 @media (max-width: 700px){
     .promo h2{
         font-size: 42px;
     }
-    .about  h3{
-        font-size: 26px;
+    .about h3::before,
+    .about h3::after{
+        max-width: 108px;
     }
     .about h2{
         font-size: 16px;
     }
-
-    .slider .list{
-        width: 1330px ;
+    .screensaver img,
+    .screensaver iframe{
+        width: 90%;
+        height: 280px;
     }
-    .slider .slide{
-        width: 300px;
-    }
-
 }
 @media (max-width: 600px){
-    .promo{
-        margin-top: -10px;
-        background-color: #20222B;
-        background-size: 100%;
-    }
     .promo h2{
         width: 90%;
         font-size: 38px;
     }
     .screensaver img,
     .screensaver iframe{
-        width: 90%;
-        height: auto;
-    }
-    .screensaver{
-        margin-bottom: -150px;
+        height: 240px;
     }
     .advantages h2{
         margin-top: 120px;
@@ -163,45 +167,71 @@
     .insurance li{
         margin-bottom: 30px;
     }
-    .services .half{
-        width: 90%;
+
+    .slide h2{
+        font-size: 16px;   
     }
-    .slider .list{
-        width: 1130px ;
-    }
-    .slider .slide{
-        width: 230px;
+    .slide p{
+        font-size: 12px;
     }
     .news .card{
         width: 60%;
     }
+    .news .card h4{
+        margin-bottom: 30px;
+    }
     .info{
         padding-top: 60px;
     }
+    .info ul{
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+    .info li{
+        margin: 8px 0px;
+    }
 }
 @media (max-width: 460px){
-    .advantages .list{
-        flex-direction: column;
+    .promo{
+        padding-top: 12.3%;
+    }
+    .promo h2{
+        font-size: 28px;
+        line-height: 48px;
+        margin-bottom: 52px;
+    }
+    .promo button{
+        width: 192px;
+        line-height: 36px;
+        font-size: 14px;
+    }
+    .about h2{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 12px;
         align-items: center;
     }
-    .advantages .item{
-        margin-bottom: 25px;
-    }
-    .advantages p{
-        margin: 0 auto;
+    .about h2 img{
+        width: 30px;
     }
     .screensaver{
         margin-bottom: -70px;
-
     }
+    .screensaver img,
     .screensaver iframe{
         width: 360px;
         height: 200px;
     }
+    .advantages .list{
+        grid-template-columns: 1fr;
+    }
+
     .services .half{
         text-align: center;
         width: 90%;
-        height: 420px;
+        height: 380px;
+        padding: 15px
     }
     .services div{
         flex-direction: column;
@@ -209,36 +239,38 @@
         justify-content: center;
         margin: 0 auto;
     }
-
     .services button{
         margin-top: 5px;
     }
     .services p{
-        margin: 0 auto;
+        margin: 15px auto;
+    }
+    .manufacturer .item{
+        width: 85%;
+        height: 55px;
+        margin-bottom: 30px;
     }
     .slide h4{
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 20px;
+    }
+    .slide p{
+        font-size: 10px;
     }
     .info ul{
         flex-direction: column;
     }
-    .slider .list{
-        width: 850px ;
-    }
-    .slider .slide{
-        width: 170px;
-        font-size: 12px;
-    }
     .news .card{
         width: 80%;
+    }
+    .footer .social-neworks{
+        width: 60%;
     }
 }
 @media (max-width: 400px){
     .logo,
     .logo img{ 
-        width: 66px;
-        height: 34px;
+        width: 105px;
     }
     .nav.mobile{
         padding-top: 25px;
@@ -248,47 +280,44 @@
         font-size: 18px;
     }
     .promo h2{
-        font-size: 24px;
+        font-size: 30px;
     }
-    .about h2{
-        font-size: 14px;
-    }
+
     .screensaver{
         margin-top: 20px;
     }
+    .screensaver img,
     .screensaver iframe{
         width: 300px;
-        height: 160px;
+        height: 180px;
+    }
+    .screensaver-btn{
+        left: calc(50% - 22px);
     }
     .advantages h2{
-        margin-top: 40px;
+        margin-top: 70px;
     }
-    .advantages .item{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
+    .services .half{
+        padding: 5px;
+        height: 330px;
     }
-    .advantages span{
-        order: 1;
-        margin-bottom: 5px;
+    .services h3{
+        font-size: 32px;
     }
-    .advantages p{
-        order: 2;
-        margin-bottom: 10px;
-    }
-    .advantages img{
-        position: static;
-        order: 3;
+    .services .half p{
+        font-size: 12px;
     }
 
-    .slider .list{
-        width: 770px ;
+    .news .card{
+        margin-top: -40px;
+        margin-bottom: 60px;
     }
-    .slider .slide{
-        width: 170px;
+    .news .card h4{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .news .card p{
         font-size: 12px;
+        line-height: 20px;
     }
 }

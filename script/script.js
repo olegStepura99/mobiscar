@@ -46,13 +46,15 @@ const slider = function (){
         x = Math.abs(parseInt(x));
 
         if(dir == "next"){
-            x += slide.offsetWidth + (list.offsetWidth - 3* (slide.offsetWidth))/4;
+            
+            x += (slide.offsetWidth + (list.offsetWidth - 3* (slide.offsetWidth))/4);
             activeSlide++;
         }else if(dir == "prev"){
             x -= slide.offsetWidth + (list.offsetWidth - 3* (slide.offsetWidth))/4;
             activeSlide--;
         }
 
+        x = Math.abs(x);
         list.style.transform = `translateX(-${x}px)`;
 
         (activeSlide == 1) ?  btnPrev.classList.add("disabled") : btnPrev.classList.remove("disabled");
